@@ -1,0 +1,301 @@
+/* General*/
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+}
+
+[class*="col-"] {
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {
+    width: 33.33%;
+    padding-left: 1rem;
+}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+a:link { 
+    text-decoration: none; 
+}
+
+
+a:visited { 
+    text-decoration: none; 
+}
+
+a:active { 
+    text-decoration: none; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-size: x-large;
+    text-decoration-line: underline;
+    text-decoration-thickness: 10%;
+    padding-bottom: .5rem;
+}
+
+h2{
+    font-size: large;
+    rotate: -1deg;
+}
+
+main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 10vh;
+    min-height: 20vh;
+}
+
+section {
+    max-width: 960px;
+    padding: 0;
+}
+
+section.drehbuch {
+    max-width: 600px;
+}
+
+section.prosa {
+    padding-right: 3rem;
+    text-align: justify;
+}
+@media only screen and (max-width: 700px) {
+    section.prosa {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+/* Images */
+
+.image-border {
+    width: 100%;
+    position: relative;
+    height: 70px;
+    bottom: 52px;
+}
+
+.image-footer-border {
+    width: 100%;
+    display: block;
+}
+
+.image-content {
+    rotate: -3deg;
+    max-width: 80vw;
+}
+
+.logo {
+    width: 5rem;
+}
+
+.hero-image {
+    object-fit: cover;
+    width: 100%;
+    height: 55vh;
+    display: block;
+}
+
+
+.hero-container {
+    position: relative;
+}
+
+
+.icon {
+    display: none;
+    color: #DA95D2;
+    padding-top: 1.5rem;
+}
+
+/* Header */ 
+
+.header-wrapper {
+    padding: 1.5rem;
+    background-color: #211D1E;
+} 
+
+.header-content {
+    display: flex;
+}
+
+.header-nav {
+    margin-left: auto;
+}
+
+.header-nav-list {
+    display: flex;
+    padding-top: 1.5rem;
+}
+
+.header-nav-list-item {
+    margin-left: 2rem;
+}
+
+.nav-home {
+    color:#F5F5F5;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 1000px) {
+    .header-content {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header-nav-list {
+        display: none;
+    }
+    .header-nav-list.open {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 7rem;
+        background-color: #211D1E;
+        width: 100%;
+        padding-top: 1rem;
+        padding-left: .35rem;
+        padding-bottom: 2rem;
+        z-index: 1;
+    }
+    .header-nav .icon {
+      float: right;
+      display: block;
+    }
+}
+  
+@media screen and (max-width: 700px) {
+    .header-nav.responsive .icon{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .header-nav.responsive .nav-link {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+.nav-link {
+    color: #DA95D2;
+    font-size: large;
+    font-weight: bold;
+}
+
+.nav-link.active {
+    color: #FB00D3;
+}
+
+.nav-lyrik {
+    color: #211D1E;
+    line-height: 1.5;
+}
+
+.nav-lyrik.active {
+    color: #FB00D3;
+    font-weight: bold;
+}
+
+/* Footer */ 
+
+.footer-wrapper {
+    display: flex;
+    padding: 2rem;
+    margin: 0;
+    background-color: #211D1E;
+}
+
+@media only screen and (min-width: 1000px) {
+    .footer-nav {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+.footer-nav {
+    margin-left: auto;
+}
+
+.footer-nav-list {
+    display: flex;
+}
+
+.footer-nav-item {
+    margin-left: 2rem;
+}
+
+/* Traum-Button */
+
+button {
+    background-color: white;
+    border-radius: 1em;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color:#FB00D3;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 2px -3px 2px #00CEFB;
+    position: absolute;
+    bottom: 65px;
+    left: 52vw;
+    box-shadow: #211D1E .5em .5em .5em;
+    max-width: 80vw;
+    /* rotate: -.5deg; */
+}
+
+button:hover {
+    background-color: #ffe8fc; 
+}
+
+@media screen and (max-width: 700px) {
+    button{
+        left: 10vw;
+    }
+}

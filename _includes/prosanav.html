@@ -1,0 +1,10 @@
+<h1>mehr</h1>
+<ul>
+    {% for node in site.pages %}
+        {% if node.identifier == "prosa" %}
+    <li>
+        <a href="{{ node.url }}" class="nav-lyrik {% if node.url ==  page.url %}active{% endif %}">{{ node.title }}</a>
+    </li>
+        {% endif %}
+    {% endfor %}
+</ul>

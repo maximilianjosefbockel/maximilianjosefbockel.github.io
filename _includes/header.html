@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<header class="header-wrapper">
+  <div class="header-content">
+    <div class="header-logo">
+      <a href="/" class="nav-home"><img class="logo" src="/images/main-logo.PNG" alt="Headerpic"></a>
+    </div>
+    <nav class="header-nav">
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <ul class="header-nav-list" id="myHeader-nav">
+        <li class="header-nav-list-item rotated">
+          <!-- zufälliger Link: <a href="#" onclick="randomLyrik();" class="nav-link {% if page.url == '/lyrik' %}active{% endif %}">Lyrik</a> --> 
+        <a href="/lyrik/arktischesfieber.html" class="nav-link {% if page.identifier == 'gedicht' %}active{% endif %}">Lyrik</a>
+        </li> 
+        <li class="header-nav-list-item rotated">
+          <a href="/drama.html" class="nav-link {% if page.url == '/drama.html' %}active{% endif %}">Drama</a>
+        </li>
+        <li class="header-nav-list-item rotated">
+          <a href="/prosa/Mein Freund, der Schriftsteller.html" class="nav-link {% if page.identifier == 'prosa' %}active{% endif %}">Prosa</a>
+        </li>
+        <li class="header-nav-list-item rotated">
+          <a href="/uebermich.html" class="nav-link {% if page.url == '/uebermich.html' %}active{% endif %}">Über mich</a>
+        </li>     
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="hero-container">
+  <img class="hero-image" src="/images/headerpic.png" alt="Headerpic">
+  <img class="image-border" src="/images/border-bottom.svg" alt="Headerpic">
+  <button type="button" class="rotated" onclick="dreamfunction()">TRÄUM EINEN TRAUM!</button>
+</div>
